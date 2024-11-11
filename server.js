@@ -1,17 +1,18 @@
 import express from 'express'
+import dotenv from 'dotenv';
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 7000;
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
-
-
+dotenv.config();
+app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.render("index")
 });
 
 
-app.listen(port, () => {
-  console.log(`Servidor escuchando en http://localhost:${port}`);
-});
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});   

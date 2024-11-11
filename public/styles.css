@@ -1,0 +1,97 @@
+:root{
+	--amarillo-mango: #FFC107;
+	--verde-palmera: #4CAF50;
+	--rojo-guayaba: #FF5252;
+	--naranja-papaya: #FF9800;
+	--azul-caribe: #03A9F4;
+	--blanco-arena: #FFFFFF;
+}
+/*Paleta de colores para la página web*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.Header{
+	display: flex;
+	justify-content: space-between;
+	height: 4em;
+	padding: 0.5rem;
+	background: var(--amarillo-mango);
+	position: sticky;
+}
+.Header-Logo{
+	height: 50px;
+	width: 50px;
+	margin: 0px 0px 0px 5px;
+	padding: 4px;
+	border-radius: 30px;
+	background: var(--azul-caribe);
+	border: solid var(--rojo-guayaba);
+}
+
+.Header-Button{
+	font-size: 14px;
+	padding: 0.5rem;
+	border-radius: 30px;
+	margin: 6px 5px 0px 0px;
+	height: 50px;
+	width: 200px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	background: var(--blanco-arena);
+}
+.Header-Button:hover{
+	color: var(--blanco-arena);
+	background: var(--verde-palmera);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transform: scale(1.1);
+}
+.Header-Title{
+	height: 60%;
+	width: 13%;
+	margin: 10px 0px 0px 5px;
+	
+	padding: 1px;
+	border-radius: 10px;
+	color: var(--rojo-guayaba);
+}
+/*Carrousel*/
+.Slider-Box{
+	height: 30em;
+	width: 100%;
+	overflow: hidden;
+
+}
+.Slider-Box .Slider-UL{
+	display: flex;
+	padding: 0;
+	width: 100%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+.Slider-Box .Slider-LI{
+
+	width: 100%;
+	list-style: none;
+	position: relative;
+}
+.Slider-Header{
+	text-align: center;
+	position: absolute;
+}
+.Slider-Text{
+	text-align: center;
+	position: absolute;
+}
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
