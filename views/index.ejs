@@ -10,7 +10,7 @@
 <body>
 	<div class = "Header">
 		<h1 class = "Header-Title">Toto Perrero</h1>
-		<button class="Header-Button">Haga su pedido</button>
+		<button href ="./contacto.ejs" class="Header-Button">Contacto</button>
 	</div>
 	<div class="Slider-Box">
 		<ul class = "Slider-UL">
@@ -63,6 +63,28 @@
 			<img class = "Container-Img" src = "t_1.jpg"> 
 		</div>
 	</div>
+		<h1 class = "Title">Envienos un comentario</h1>
+	<div class = "CTN">
+		<div class = "GlobalCTN">
+			<form action="/add" method="post" class = "Form">
+				<div>
+					<label for="email">Correo electrónico:</label>
+        	<input class = "Form_Input" type="email" id="email" name="email" required><br><br>
+        </div>
+        <div>
+        	<label for="nombre">Nombre:</label>
+        	<input class = "Form_Input" type="text" id="nombre" name="nombre" required><br><br>
+        </div>
+        <div>
+        	<label for="comentario">Comentario:</label>
+        	<textarea class = "Form_Input" id="comentario" name="comentario" required></textarea><br><br>
+        </div>
+        <div class = "Button_Group">
+        	<input class = "Button" type="submit" value="Enviar">
+        </div>
+    </form>
+   </div>
+  </div>
 	<div class = "Footer">
 		<div class="Footer-Logo"> 
 			<img class = "Footer-Logo-Img" src="Instagram.svg" alt="Instagram" href="#"> 
